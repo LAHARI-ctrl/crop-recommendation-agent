@@ -96,7 +96,7 @@ document.getElementById('predictionForm').addEventListener('submit', async funct
     
     try {
         // Appends predict to relative path seamlessly for Render multi-environment hosting
-        const response = await fetch('./predict', {
+        const response = await fetch('https://crop-recommendation-agent.onrender.com/predict', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
